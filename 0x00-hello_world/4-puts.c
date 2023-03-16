@@ -6,7 +6,7 @@
 #include <stdio.h>
 
 /**
- *main - entry point
+ * main - the entry point to print a string
  *
  * return: always 0
  */
