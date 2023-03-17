@@ -3,7 +3,8 @@
 #include <stdio.h>
 
 /**
- * main - Prints 
+ * main - Prints 0 to 9 numbers
+ *
  * Return: 0 if it's true
  */
 
