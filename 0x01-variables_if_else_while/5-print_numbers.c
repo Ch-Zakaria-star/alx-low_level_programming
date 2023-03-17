@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Prints alphabet in lowercase except q and e followed by a new line
+ * main - Prints numbers from 0 to 9
  * Return: 0 if it's true
  */
 
