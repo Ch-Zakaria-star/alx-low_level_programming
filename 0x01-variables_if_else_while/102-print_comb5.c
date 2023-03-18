@@ -24,11 +24,11 @@ for (l = '0'; l <= '9'; l++)
 {
 if ((i < k) && (j <= l))
 {
-putchar(i);
 putchar(j);
+putchar(i);
 putchar(' ');
-putchar(k);
 putchar(l);
+putchar(k);
 if (!(i == '8' && j == '9'))
 {
 putchar(',');
