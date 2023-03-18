@@ -27,8 +27,8 @@ if ((i < k) && (j <= l))
 putchar(j);
 putchar(i);
 putchar(' ');
-putchar(l);
 putchar(k);
+putchar(l);
 if (!(i == '8' && j == '9'))
 {
 putchar(',');
