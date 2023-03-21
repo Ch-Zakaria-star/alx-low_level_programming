@@ -2,6 +2,7 @@
 
 /**
  * main - print -putchar
+ *
  * Return: 0
  */
 
