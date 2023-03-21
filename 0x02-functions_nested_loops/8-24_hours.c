@@ -3,7 +3,7 @@
 /**
  * jack_bauer - print every minute of the day
  * 
- * 
+ * Description: prints time
  */
 
 void jack_bauer(void)
