@@ -13,6 +13,6 @@ int a;
 for (a = 'a'; a <= 'z'; a++)
 _putchar(a);
 
-putchar('\n');
+_putchar('\n');
 }
 
