@@ -5,30 +5,34 @@
  *
  * Returns: void
  */
+
 void times_table(void)
 {
-int n;
-int i;
+	int r, c, result;
 
-for (n = 0; n <= 9; n++)
-{
-_putchar('0');
-for (i = 1; i <= 9; i++)
-{
-int result = n * i;
-
-_putchar(',');
-_putchar(' ');
-if (result <= 9)
-{
-_putchar(' ');
-}
-else
-{
-_putchar('0' + (result / 10));
-_putchar('0' + (result % 10));
-}
-}
-_putchar('\n');
-}
+	for (r = 0; r <= 9; r++)
+	{
+		_putchar('0');
+		_putchar(',');
+		_putchar(' ');
+		for (c = 1; c <= 9; c++)
+		{
+			result = (r * c);
+		if ((result / 10) > 0)
+		{
+			_putchar((result / 10) + '0');
+		}
+		else
+		{
+			_putchar(' ');
+		}
+			_putchar((result % 10) + '0');
+		if (c < 9)
+		{
+			_putchar(',');
+			_putchar(' ');
+		}
+	}
+		_putchar('\n');
+	}
 }
