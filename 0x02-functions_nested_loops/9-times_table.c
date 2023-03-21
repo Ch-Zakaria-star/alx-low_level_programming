@@ -5,7 +5,8 @@
  *
  * Returns: void
  */
-
+void times_table(void)
+{
 int n;
 int i;
 
@@ -26,6 +27,7 @@ else
 {
 _putchar('0' + (result / 10));
 _putchar('0' + (result % 10));
+}
 }
 _putchar('\n')
 }
