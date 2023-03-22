@@ -19,7 +19,7 @@ for (i = 0; i < x-1; i++)
 c = b;
 b += a;
 a = c;
-printf("%lu", b);
+printf("%ld", b);
 
 if (i == 49)
 printf("\n");
