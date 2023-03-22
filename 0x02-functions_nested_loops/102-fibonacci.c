@@ -8,7 +8,7 @@
 
 int main(void)
 {
-int count;
+int i;
 unsigned long a = 0, b = 1, d;
 
 for (i = 0; i < 50; i++)
@@ -25,4 +25,4 @@ else
 printf(", ");
 }
 return (0);
-}
+}i
