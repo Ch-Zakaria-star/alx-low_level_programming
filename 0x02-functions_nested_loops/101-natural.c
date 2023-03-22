@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
 * main - sums nultplies of 3 or 5
@@ -16,7 +16,7 @@ if ((i % 3) == 0 || (i % 5) == 0)
 sum += i;
 }
 
-_putchar(sum);
+printf("%d\n", sum);
 
 return (0);
 }
