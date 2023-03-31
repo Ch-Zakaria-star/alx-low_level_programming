@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- *string_toupper - Changes all lowercase to uppercase
- * @c: The string to be changed.
- *
- * Return: A pointer to the changed string.
- */
+* string_toupper -conc str
+*
+*@s: charactee
+*Return: success
+*/
 
 char *string_toupper(char *str)
 {
@@ -19,6 +19,5 @@ str[i] = str[i] - 32;
 }
 ++i;
 }
-
 return (str);
 }
