@@ -7,12 +7,18 @@
  * Return: A pointer to the changed string.
  */
 
-char *string_toupper(char *s)
+char *string_toupper(char *str)
 {
-int j;
+int i = 0;
 
-for (j = 0; s[j] != '\0'; j++)
-if (s[j] > 96 && s[j] < 123)
-s[j] -= 32;
-return (s);
+while (str[i] != '\0')
+{
+if (str[i] >= 'a' && str[i] <= 'z')
+{
+str[i] = str[i] - 32;
+}
+++i;
+}
+
+return (str);
 }
