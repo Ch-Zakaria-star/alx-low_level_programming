@@ -9,10 +9,10 @@
 
 char *string_toupper(char *s)
 {
-int i;
+int j;
 
-for (i = 0; s[i] != '\0'; i++)
-if (s[i] > 96 && s[i] < 123)
-s[i] -= 32;
+for (j = 0; s[j] != '\0'; j++)
+if (s[j] > 96 && s[j] < 123)
+s[j] -= 32;
 return (s);
 }
