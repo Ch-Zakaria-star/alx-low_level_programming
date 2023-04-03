@@ -11,20 +11,17 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-char *bhaystack;
-char *pneedle;
-
-while (*haystack != '\0')
+while (*haystack)
 {
-src = haystack;
-sub = needle;
+char *src = haystack;
+char *dest = needle;
 
-while (*haystack != '\0' && *sub != '\0' && *haystack == *sub)
+while (*haystack && *dest && *haystack == *dest)
 {
 haystack++;
-sub++;
+dest++;
 }
-if (!*sub)
+if (!*dest)
 return (src);
 haystack = src + 1;
 }
