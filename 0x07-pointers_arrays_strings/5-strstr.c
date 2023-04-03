@@ -1,12 +1,11 @@
 #include "main.h"
 
 /**
- * _strncmp - compares two strings within b bytes.
- * @s1: string to check
- * @s2: string to check from
- * @b: number of bytes to check
- * Return: 0 if strings are the same
- * any other number if they are different.
+ *_strstr - find the first occurence
+ *@haystack: string
+ *@needle: string
+ *
+ *Return: the pointer to the first occurence
  */
 
 char *_strstr(char *haystack, char *needle)
