@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _strlen_recursion - prints string using recursion
- * Return: length of a string
- * @s: string to measure
+ * factorial - factorial n
+ * @n: integer arams
+ * Return: recursion
  */
 
 int factorial(int n)
