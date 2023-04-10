@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include "main.h"
+
+/**
+* main - main function
+* @argc: number of arguments to program
+* @argv: vector of arguments
+* Return: always zero.
+*/
+
+int main(int argc, char *argv[])
+{
+int i = 0;
+while (i < argc)
+{
+printf("%s\n", argv[i]);
+i++;
+}
+return (0);
+}
