@@ -4,11 +4,10 @@
 #include <ctype.h>
 
 /**
- * _isnumber - checks if string is a number
- * @s: string
- *
- * Return: On success 1.
- * If not a number, 0 is returned.
+ * main - prints the minimum number of coins
+ * @argc: n args
+ * @argv: arr args
+ * Return: 0
  */
 
 int main(int argc, char *argv[])
@@ -52,6 +51,5 @@ if (min % 1 >= 0)
 r += min / 1;
 }
 printf("%d\n", r);
-
 return (0);
 }
