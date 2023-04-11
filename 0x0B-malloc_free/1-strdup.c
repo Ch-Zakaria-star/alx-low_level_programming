@@ -31,6 +31,5 @@ return (NULL);
 for (i = 0; i < size; i++)
 s[i] = str[i];
 s[size] = '\0';
-
-return (sd);
+return (s);
 }
