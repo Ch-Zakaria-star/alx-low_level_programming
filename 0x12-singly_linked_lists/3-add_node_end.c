@@ -11,23 +11,29 @@
  * Return: address of the head.
  */
 
-list_t *add_node(list_t **head, const char *str)
+list_t *add_node_end(list_t **head, const char *str)
 {
-	unsigned int count = 0;
-	list_t *nod;
+	list_t *ptr, *tmp;
 
-	while (str[count])
-	{
-		count++;
-	}
-	nod = malloc(sizeof(list_t));
-	if (!nod)
+	ptr = malloc(sizeof(list_t));
+	if (ptr == NULL)
 	{
 		return (NULL);
 	}
-	nod->str = strdup(str);
-	nod->len = count;
-	nod->next = *head;
-	*head = nod;
+	ptr->str = strdup(str);
+	ptr->len = strlen(str);
+	ptr->next = NULL;
+	tmp = *head;
+
+	if (tmp == NULL)
+	{
+		*head = ptr;
+	}
+	else
+	{
+		while (tmp->next != NULL)
+			tmp = tmp->next;
+		tmp->next = ptr;
+	}
 	return (*head);
 }
