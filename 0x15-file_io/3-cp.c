@@ -1,3 +1,9 @@
+#include <fcntl.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
 #include "main.h"
 
 /**
@@ -8,7 +14,6 @@
  * Return: 0 if successful, otherwise a number between 97 and
  * 100 (each number represents an error)
  */
-
 int main(int argc, char *argv[])
 {
 	int from_fd, to_fd;
@@ -40,7 +45,6 @@ int main(int argc, char *argv[])
  * close_fd - closes a file handle and exits program on failure
  * @fd: The file handle
  */
-
 void close_fd(int fd)
 {
 	if (close(fd) == -1)
@@ -57,7 +61,6 @@ void close_fd(int fd)
  * @src_file: The source file name
  * @dest_file: The destination file name
  */
-
 void copy_contents(int from_fd, int to_fd, char *src_file, char *dest_file)
 {
 	int i, c, buf_size = 1024;
